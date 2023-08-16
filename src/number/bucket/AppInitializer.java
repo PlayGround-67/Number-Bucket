@@ -30,10 +30,6 @@ public class AppInitializer {
         MainForm mainForm = new MainForm();
         mainForm.setForms(oddBucket,evenBucketForm);
         mainForm.setVisible(true);
-       
         
-        
-//        mainForm.setForms(oddBucket, evenBucketForm);
     }
-    
 }

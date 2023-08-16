@@ -68,7 +68,7 @@ public class OddBucket extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     public void setValue(int value){
-        
+        System.out.println("Odd Bucket :"+value);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

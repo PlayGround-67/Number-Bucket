@@ -98,7 +98,10 @@ public class MainForm extends javax.swing.JFrame {
 
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
         // TODO add your handling code here:
-        System.out.println("clicked...");
+        String number = txtNumber.getText();
+        
+        oddBucket.setValue(Integer.parseInt(number));
+        evenBucket.setValue(Integer.parseInt(number));
     }//GEN-LAST:event_btnActionPerformed
 
     public void setForms(OddBucket oddBucket, EvenBucket evenBucket){
