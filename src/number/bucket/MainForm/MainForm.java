@@ -6,6 +6,7 @@ package number.bucket.MainForm;
 
 import number.bucket.EvenBucket.EvenBucket;
 import number.bucket.OddBucket.OddBucket;
+import number.bucket.PrimeBucket.PrimeBucket;
 
 /**
  *
@@ -102,15 +103,18 @@ public class MainForm extends javax.swing.JFrame {
         
         oddBucket.setValue(Integer.parseInt(number));
         evenBucket.setValue(Integer.parseInt(number));
+        primeBucket.setValue(Integer.parseInt(number));
     }//GEN-LAST:event_btnActionPerformed
 
-    public void setForms(OddBucket oddBucket, EvenBucket evenBucket){
+    public void setForms(OddBucket oddBucket, EvenBucket evenBucket,PrimeBucket primeBucket){
         this.oddBucket = oddBucket;
         this.evenBucket = evenBucket;
+        this.primeBucket = primeBucket;
     }
     
    private OddBucket oddBucket;
    private EvenBucket evenBucket;
+   private PrimeBucket primeBucket;
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
