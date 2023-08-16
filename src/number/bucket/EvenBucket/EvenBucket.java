@@ -67,8 +67,10 @@ public class EvenBucket extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
      public void setValue(int value){
          System.out.println("Even bucket: "+value);
-         if(value%2==0)
-         txtArea.append(value+"\n");
+         if(value%2==0){
+             txtArea.append(value+"\n");
+         }
+     
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
