@@ -4,6 +4,8 @@
  */
 package number.bucket;
 
+import number.bucket.MainForm.MainForm;
+
 /**
  *
  * @author shan
@@ -15,7 +17,7 @@ public class AppInitializer {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        new MainForm().setVisible(true);
     }
     
 }
