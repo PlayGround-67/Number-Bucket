@@ -4,7 +4,10 @@
  */
 package number.bucket;
 
+import java.awt.Color;
+import number.bucket.EvenBucket.EvenBucket;
 import number.bucket.MainForm.MainForm;
+import number.bucket.OddBucket.OddBucket;
 
 /**
  *
@@ -16,8 +19,21 @@ public class AppInitializer {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        new MainForm().setVisible(true);
+       
+      
+        OddBucket oddBucket = new OddBucket();
+        oddBucket.setVisible(true);
+        
+        EvenBucket evenBucketForm = new EvenBucket();
+        evenBucketForm.setVisible(true);
+        
+        MainForm mainForm = new MainForm();
+        mainForm.setForms(oddBucket,evenBucketForm);
+        mainForm.setVisible(true);
+       
+        
+        
+//        mainForm.setForms(oddBucket, evenBucketForm);
     }
     
 }

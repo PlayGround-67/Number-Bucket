@@ -4,18 +4,28 @@
  */
 package number.bucket.MainForm;
 
+import number.bucket.EvenBucket.EvenBucket;
+import number.bucket.OddBucket.OddBucket;
+
 /**
  *
  * @author shan
  */
 public class MainForm extends javax.swing.JFrame {
 
+    
     /**
      * Creates new form MainForm
      */
     public MainForm() {
         initComponents();
     }
+    
+    public MainForm(OddBucket oddBucket, EvenBucket evenBucket){
+        this.oddBucket = oddBucket;
+        this.evenBucket = evenBucket;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,9 +36,13 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
         jLabel1 = new javax.swing.JLabel();
         btn = new javax.swing.JButton();
         txtNumber = new javax.swing.JTextField();
+
+        jScrollPane1.setViewportView(jEditorPane1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,12 +98,23 @@ public class MainForm extends javax.swing.JFrame {
 
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
         // TODO add your handling code here:
+        System.out.println("clicked...");
     }//GEN-LAST:event_btnActionPerformed
 
+    public void setForms(OddBucket oddBucket, EvenBucket evenBucket){
+        this.oddBucket = oddBucket;
+        this.evenBucket = evenBucket;
+    }
+    
+   private OddBucket oddBucket;
+   private EvenBucket evenBucket;
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtNumber;
     // End of variables declaration//GEN-END:variables
 }
